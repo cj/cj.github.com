@@ -10,12 +10,12 @@ class Moby
         :action => 'searchPosts',
         :k => '2bejXK0oEnftvaYu',
         :format => 'json',
-        :searchUsername => 'jkreeftmeijer',
+        :searchUsername => 'ceej',
         :searchItemsPerPage => 1
       }
     )
 
     url = JSON.parse(result)['results'].first['post']['media']['url_full']
-    %x(mkdir -p _site/images && curl -o _site/images/background.jpg #{url}) 
-  end  
+    %x(mkdir -p _site/images && curl -o _site/images/background.jpg #{url})
+  end
 end
