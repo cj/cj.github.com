@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "New and First Real Blog"
-excerpt: So I've been wanting to start a blog for a long time and I finally have one I'm happy with, thanks to [Github Pages](http://pages.github.com/) and [Jeff Kreeftmeijer](http://jeffkreeftmeijer.com/)
+excerpt: So I've been wanting to start a blog for a long time and I finally have one I'm happy with, thanks to [Github Pages](http://pages.github.com/) and [Jeff Kreeftmeijer](http://jeffkreeftmeijer.com/).
 published: true
 ---
 
