@@ -1,3 +1,5 @@
+/*08243B*/
+/*092842*/
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700);
 
 html,
@@ -18,7 +20,7 @@ body
   -o-background-size:100% auto;
   -webkit-background-size:100% auto;
   background-attachment:fixed;
-  background-color:#093152;
+  background-color:#08243B;
   /*background-image: url('../images/background.jpg');*/
   background-position:center;
   background-size:100% auto;
@@ -83,11 +85,11 @@ div#container
   -moz-border-radius:5px;
   -moz-box-shadow:0 1px 0 #fff;
   -webkit-border-radius:5px;
-  -webkit-box-shadow:0 -1px 0 #fff, 0 0 10px #093152;
+  -webkit-box-shadow:0 -1px 0 #fff, 0 0 10px #08243B;
   background-color:#eee;
   border-radius:5px;
   box-shadow:0 1px 0 #fff;
-  color:#093152;
+  color:#08243B;
   font-size:15px;
   line-height:150%;
   opacity:0.9px;
@@ -104,7 +106,7 @@ div#content img, div#content object
   -moz-box-shadow:0 1px 0 #fff;
   -webkit-border-radius:5px;
   -webkit-box-shadow:0 1px 0 #fff;
-  border: 5px #093152 solid;
+  border: 5px #08243B solid;
   width: 440px;
 }
 
@@ -153,14 +155,14 @@ div.ad{
 
 div.box{
   width: 120px;
-  background-color: #093152;
+  background-color: #08243B;
   padding: 10px;
   -moz-border-radius-topright:5px;
   -moz-border-radius-bottomright:5px;
   -moz-box-shadow:0 -1px 0 #444;
   -webkit-border-top-right-radius:5px;
   -webkit-border-bottom-right-radius:5px;
-  -webkit-box-shadow:0 -1px 0 #444, 0 0 10px #093152;
+  -webkit-box-shadow:0 -1px 0 #444, 0 0 10px #08243B;
   z-index:0;
 }
 
@@ -193,7 +195,7 @@ h1
   -moz-box-shadow:0 1px 0 #fff;
   -webkit-border-radius:5px;
   -webkit-box-shadow:0 1px 0 #fff;
-  background-color:#093152;
+  background-color:#08243B;
   border-radius:5px;
   box-shadow:0 1px 0 #fff;
   color:#fff;
@@ -309,7 +311,7 @@ div#content pre
   -moz-box-shadow:0 -1px 0 #444;
   -webkit-border-radius:5px;
   -webkit-box-shadow:0 -1px 0 #444;
-  background-color:#093152;
+  background-color:#08243B;
   color:#fff;
   font-size: 13px;
   padding: 20px;
@@ -367,7 +369,7 @@ a:hover span.balloon{
 }
 
 span.balloon{
-  background-color: #093152;
+  background-color: #08243B;
   color: #fff;
   font-size: 10px;
   padding:3px 5px;
