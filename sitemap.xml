@@ -4,50 +4,50 @@ layout: none
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>http://jeffkreeftmeijer.com/</loc>
+      <loc>http://cj.io/</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>daily</changefreq>
       <priority>1</priority>
    </url>
    <url>
-      <loc>http://jeffkreeftmeijer.com/projects/</loc>
+      <loc>http://cj.io/projects/</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
    <url>
-      <loc>http://jeffkreeftmeijer.com/projects/navvy/</loc>
+      <loc>http://cj.io/projects/navvy/</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
    <url>
-      <loc>http://jeffkreeftmeijer.com/projects/swinger/</loc>
+      <loc>http://cj.io/projects/swinger/</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
    <url>
-      <loc>http://jeffkreeftmeijer.com/projects/fuubar/</loc>
+      <loc>http://cj.io/projects/fuubar/</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
    <url>
-      <loc>http://jeffkreeftmeijer.com/projects/stillmaintained/</loc>
+      <loc>http://cj.io/projects/stillmaintained/</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
    <url>
-      <loc>http://jeffkreeftmeijer.com/archive</loc>
+      <loc>http://cj.io/archive</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.7</priority>
    </url>
 {% for post in site.posts %}
    <url>
-      <loc>http://jeffkreeftmeijer.com{{ post.url }}/</loc>
+      <loc>http://cj.io{{ post.url }}/</loc>
       <lastmod>{{ post.date | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>

@@ -4,13 +4,13 @@ layout: none
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title>Jeff Kreeftmeijer</title>
-  <link href="http://jeffkreeftmeijer.com/feed.xml" rel="self"/>
-  <link href="http://jeffkreeftmeijer.com/"/>
+  <title>CJ Lazell</title>
+  <link href="http://cj.io/feed.xml" rel="self"/>
+  <link href="http://cj.io/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://jeffkreeftmeijer.com/</id>
+  <id>http://cj.io/</id>
   <author>
-    <name>Jeff Kreeftmeijer</name>
+    <name>CJ Lazell</name>
   </author>
 
   {% for post in site.posts %}
@@ -19,9 +19,9 @@ layout: none
     {% if post.elsewhere %}
       <link href="{{ post.elsewhere.url }}"/>
     {% else %}
-      <link href="http://jeffkreeftmeijer.com{{ post.url }}"/>
+      <link href="http://cj.io{{ post.url }}"/>
     {% endif %}
-    <id>http://jeffkreeftmeijer.com{{ post.url }}</id>
+    <id>http://cj.io{{ post.url }}</id>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <summary>{{ post.excerpt | xml_escape }}</summary>
     <content type="html">

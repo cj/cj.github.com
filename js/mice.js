@@ -27,12 +27,12 @@ function speak(data){
   clearTimeout(timeouts[data['id']]);
   $('#mouse_'+data['id']+' img').remove();
   $('#mouse_'+data['id']).append('<img src="http://www.gravatar.com/avatar/' + data['email'] + '?s=20" />');
-    
-  if(data['text'] == '') {    
+
+  if(data['text'] == '') {
     return $('#mouse_'+data['id']+' .chat').hide();
   }
-  
-  $('#mouse_'+data['id']+' .chat').show().text(data['text']);   
+
+  $('#mouse_'+data['id']+' .chat').show().text(data['text']);
   timeouts[data['id']] = setTimeout("$('#mouse_"+data['id']+" .chat').hide()", 30000)
 };
 
@@ -40,13 +40,13 @@ function preview(data){
   clearTimeout(timeouts[data['preview']]);
   $('#preview img').remove();
   $('#preview').append('<img src="http://www.gravatar.com/avatar/' + data['email'] + '?s=20" />');
-    
-  if(data['text'] == '') {    
+
+  if(data['text'] == '') {
     return $('#preview .chat').hide();
   }
-  
+
   $('#preview').show();
-  $('#preview .chat').show().text(data['text']);   
+  $('#preview .chat').show().text(data['text']);
   timeouts['preview'] = setTimeout("$('#preview').hide()", 30000)
 };
 
@@ -66,17 +66,17 @@ $(document).ready(function(){
     if($('form#chat input#email').val() == '') {
       return alert('You forgot to fill in your e-mail address.');
     }
-    
+
     socket.send(JSON.stringify({
       action: 'speak',
       email: $('form#chat input#email').val(),
       text: $('form#chat input#text').val().substring(0, 140)
     }));
-    
+
     email: $('form#chat input#text').val('')
     return false;
   })
-  
+
   $('body').append('<span id="preview"><span style="display:none;" class="chat"/></span>');
 });
 
@@ -89,7 +89,7 @@ $(document).mousemove(
       w: $(window).width(),
       h: $(window).height()
     }))
-        
+
     $('#preview').css({
       'left' : e.pageX + 'px',
       'top' : e.pageY + 'px'
@@ -98,7 +98,7 @@ $(document).mousemove(
 );
 
 var disabled = false,
-    socket = new io.Socket('jeffkreeftmeijer.com', {port: 8000}),
+    socket = new io.Socket('cj.com', {port: 8000}),
     timeouts = {};
 
 if(socket.connect()){
@@ -108,7 +108,7 @@ if(socket.connect()){
       $('#mouse_'+data['id']).remove();
     } else if(data['action'] == 'speak') {
       if(data['id']) {
-        speak(data);  
+        speak(data);
       } else {
         preview(data);
       }

@@ -1,5 +1,5 @@
 Options +FollowSymlinks
 RewriteEngine on
-RewriteCond %{http_host} ^www\.jeffkreeftmeijer\.com [NC]
-RewriteRule ^(.*)$ http://jeffkreeftmeijer.com/$1 [R=301,NC]
+RewriteCond %{http_host} ^www\.cj\.com [NC]
+RewriteRule ^(.*)$ http://cj.com/$1 [R=301,NC]
 Redirect 301 /navvy /projects/navvy

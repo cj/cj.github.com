@@ -1,6 +1,6 @@
-h1. jeffkreeftmeijer.com
+h1. cj.io
 
-My personal blog. ["Check it out":http://jeffkreeftmeijer.com]! :D
+My personal blog. ["Check it out":http://cj.io]! :D
 
 h2. Using the source
 
