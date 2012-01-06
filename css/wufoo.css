@@ -1,3 +1,7 @@
 div.info{
   display:none !important;
 }
+
+#form1.wufoo h2 {
+  display: none;
+}
