@@ -20,7 +20,7 @@ excerpt: CJ Lazell; Entrepreneurial Software Developer (Ruby/PHP/Python/JS) and 
       {% endif %}
     </p>
     <p>
-      {{ post.excerpt }}
+      {{ post.excerpt | markdownify }}
       {% if post.elsewhere %}
         <span class="small">Published as a guest article for <a href="{{ post.elsewhere.main_url }}">{{ post.elsewhere.name}}</a>.</span>
       {% endif %}

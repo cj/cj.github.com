@@ -19,7 +19,7 @@ excerpt: The complete archive of CJ Lazell's articles.
       {% endif %}
     </p>
     <p>
-      {{ post.excerpt }}
+      {{ post.excerpt | markdownify }}
       {% if post.elsewhere %}
         <span class="small">Published as a guest article for <a href="{{ post.elsewhere.main_url }}">{{ post.elsewhere.name}}</a>.</span>
       {% endif %}
