@@ -23,7 +23,7 @@ beautiful.  Take a look for yourselves.
 
 What about an image you say? ..... how about a happy cow!
 
-![Happy Cow](/images/posts/happy-cow.jpg)
+![Happy Cow](http://cj.io/images/posts/happy-cow.jpg)
 
 That's it for now, I can't think of a better time to start a blog than at the beginning of
 a new year!  Expect a lot of articles to come in the future, from code snippets to interesting things
