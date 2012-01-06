@@ -223,6 +223,17 @@ h1:hover span
   display: block;
 }
 
+#ads h2 {
+  color:#fff;
+  font-size:28px;
+  text-align:center;
+  margin: 5px 0px 10px 0px;
+}
+
+#ads img {
+  cursor: pointer;
+}
+
 h2
 {
   /*font-size:43px;*/

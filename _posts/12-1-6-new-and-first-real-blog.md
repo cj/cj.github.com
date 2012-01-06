@@ -28,3 +28,7 @@ What about an image you say? ..... how about a happy cow!
 That's it for now, I can't think of a better time to start a blog than at the beginning of
 a new year!  Expect a lot of articles to come in the future, from code snippets to interesting things
 I come across on a daily basis.  Plus a lot rants and raves!
+
+
+<Results Success="FALSE" xmlns="http://www.cccis.com/interfaces/ia/response"> <ErrDescription>com.bea.xml.XmlException: error: file://&lt;Line 10, Column 45>: XML-20201: (Fatal Error) Expected name instead of .</ErrDescription>
+</Results>
