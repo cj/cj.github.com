@@ -224,7 +224,8 @@ h1:hover span
 
 h2
 {
-  font-size:43px;
+  /*font-size:43px;*/
+  font-size:42px;
 }
 
 h3
