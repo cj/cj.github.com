@@ -5,8 +5,8 @@ excerpt: So I've been wanting to start a blog for a long time and I finally have
 published: true
 ---
 
-So I've been wanting to start a blog for a long time and I finally have one I'm happy with
-, thanks to [Github Pages](http://pages.github.com/) and [Jeff Kreeftmeijer](http://jeffkreeftmeijer.com/).  You'll notice
+So I've been wanting to start a blog for a long time and I finally have one I'm happy with, thanks to
+[Github Pages](http://pages.github.com/) and [Jeff Kreeftmeijer](http://jeffkreeftmeijer.com/).  You'll notice
 his blog is very similar :)
 
 You just can't beat the simplicity, which is what I like about it the most.  The way
