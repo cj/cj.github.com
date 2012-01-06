@@ -25,6 +25,6 @@ What about an image you say? ..... how about a happy cow!
 
 ![Happy Cow](/images/posts/happy-cow.jpg)
 
-That's it for now, I can't think of better time to start a blog than at the start of
+That's it for now, I can't think of a better time to start a blog than at the beginning of
 a new year!  Expect a lot of articles to come in the future, from code snippets to interesting things
 I come across on a daily basis.  Plus a lot rants and raves!
