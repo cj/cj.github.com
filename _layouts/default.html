@@ -48,6 +48,39 @@
         </div>
         <h2>{{ page.title }}</h2>
         {{ content }}
+
+<!-- script type="text/javascript">
+  var search_term = 'real',
+    feed_xml    = '';
+
+  $.ajax({
+    type: "GET",
+    url: "/feed.xml",
+    dataType: "xml",
+    success: search_feed
+  });
+
+  var search_feed = function(xml) {
+    if(!feed_xml) {
+      feed_xml = xml;
+    }
+
+    var results = [];
+
+    $(feed_xml).find('entry').each(function(entry) {
+      var $entry   = $(this),
+          title    = $entry.find('title').text(),
+          link     = $entry.find('link').text(),
+          summary  = $entry.find('summary').text(),
+          content  = $entry.find('summary').text();
+
+      var search_rank = LiquidMetal.score((title+summary).replace(/[^0-9a-z]/gi, ' '),  search_term);
+      if(search_rank > 0.6) results[search_rank] = title;
+    });
+
+    console.log(results);
+  };
+</script-->
       </div>
 
       <div id="ads">
@@ -112,8 +145,10 @@
 
   </script>
 
-  <script stype="text/javascript">
+  <script type="text/javascript">
     $('.tweet').attr('href', 'http://twitter.com/share?url=' + escape(document.location) + '&via=ceej&text=' + escape(document.title.split(' - ')[0]));
   </script>
+
+  <script src="https://raw.github.com/rmm5t/liquidmetal/master/liquidmetal.js" type="text/javascript"></script>
 </body>
 </html>

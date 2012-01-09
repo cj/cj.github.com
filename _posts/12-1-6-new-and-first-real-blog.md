@@ -13,7 +13,7 @@ You just can't beat the simplicity, which is what I like about it the most.  The
 it also handles code snippets, images etc... which I'll be posting a lot of is just
 beautiful.  Take a look for yourselves.
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 (function( $ ) {
   $.fn.myPlugin = function() {
     // Do your awesome plugin stuff here

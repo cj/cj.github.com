@@ -1,8 +1,0 @@
----
-layout: post
-title: "[Ruby/Rails] Stop resque jobs running at a certain time"
-excerpt: So I needed a way to stop running resque jobs at certain times due to a legacy api.
-published: true
----
-
-So I needed a way to stop running resque jobs at certain times due to a legacy api.

@@ -1,2 +1,4 @@
 permalink: /:year/:title
 exclude: lib
+auto: true
+pygments: true

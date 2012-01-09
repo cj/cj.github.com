@@ -20,6 +20,7 @@ body
   -moz-background-size:100% auto;
   -o-background-size:100% auto;
   -webkit-background-size:100% auto;
+  border-radius:5px;
   background-attachment:fixed;
   background-color:#181818;
   /*background-image: url('../images/background.jpg');*/
@@ -107,6 +108,7 @@ div#content img, div#content object
   -moz-box-shadow:0 1px 0 #fff;
   -webkit-border-radius:5px;
   -webkit-box-shadow:0 1px 0 #fff;
+  border-radius:5px;
   border: 5px #181818 solid;
   width: 440px;
 }
@@ -297,6 +299,18 @@ hr.right
   line-height: 150%;
 }
 
+#content p code, #content p pre {
+    background-color: #F8F8F8;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-size: 12px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 2px 6px;
+}
+
 pre{
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
@@ -312,6 +326,7 @@ div#content pre
   -moz-box-shadow:0 -1px 0 #444;
   -webkit-border-radius:5px;
   -webkit-box-shadow:0 -1px 0 #444;
+  border-radius:5px;
   background-color:#181818;
   color:#fff;
   font-size: 13px;
@@ -327,6 +342,7 @@ div.notice
   -moz-box-shadow:0 -1px 0 #fffddd;
   -webkit-border-radius:5px;
   -webkit-box-shadow:0 -1px 0 #fffddd;
+  border-radius:5px;
   background-color:#fffbbb;
   padding: 20px;
   text-shadow:0 1px 0 #dddaaa;
@@ -378,6 +394,7 @@ span.balloon{
   -moz-box-shadow:0 -1px 0 #444;
   -webkit-border-radius:5px;
   -webkit-box-shadow:0 -1px 0 #444;
+  border-radius:5px;
   text-shadow:0 1px 0 #000;
   font-weight: 500;
   margin: 0 5px;
