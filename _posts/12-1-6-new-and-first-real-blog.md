@@ -10,7 +10,7 @@ So I've been wanting to start a blog for a long time and I finally have one I'm 
 his blog is very similar :)
 
 You just can't beat the simplicity, which is what I like about it the most.  The way
-it also handles code snippets, images etc... which I'll be posting a lot of is just
+it also handles code snippets, images etc... which I'll be posting a lot of, is just
 beautiful.  Take a look for yourselves.
 
 {% highlight javascript linenos %}
