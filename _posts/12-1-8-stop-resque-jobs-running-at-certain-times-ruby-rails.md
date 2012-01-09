@@ -67,4 +67,4 @@ need to make sure that the date is tomorow, otherwise it would set it for 6am th
 as expected.
 
 That's it, now we have our [resque](https://github.com/defunkt/resque) workers stopping at certain days and times.
-If you have any questions, comments or improvements please let me know by adding a comment :)
+If you have any questions, comments or improvements, please let me know by adding a comment :)
