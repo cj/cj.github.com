@@ -44,24 +44,21 @@ of their <s>.NET memory leak clean ups</s> maintenance windows.  If it does use 
 
 {% highlight ruby linenos %}
 if has_time_off = legacy_time_off[:"current_day"]
-
   # If someone just enters a string convert it to an array
   has_time_off = [has_time_off] if has_time_off.kind_of?(String)
-
+  # Loop through the times off
   has_time_off.each do |time_off|
-
+    # Parse the time off
     time_off = time_off.split('-').collect { |t| Chronic.parse(t) }
-
+    # Set the from and to
     from = time_off.first
     to   = time_off.last
-
+    # Check if it falls within the given time off range
     if current_time >= from and current_time < to
       # It falls within the given time range for that day
       break
     end
-
   end
-
 end
 {% endhighlight %}
 
