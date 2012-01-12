@@ -20,13 +20,13 @@ Lets make a simple list of days and times our workers should stop working and no
 except the data disapears and never gets created.  So it's our job as responsable programmers to compensate for this and not send them anything in those maintenance windows:
 
 {% highlight ruby linenos %}
-time_off = {
-  saturday:  '10pm-8am',
-  sunday:    '12am-6am',
+legacy_time_off = {
+  saturday:  ['12am-6am','10pm-midnight'],
+  sunday:    '12am-8am',
   monday:    '12am-6am',
   tuesday:   '12am-6am',
   wednesday: '12am-6am',
-  thursday:  '12am-6am',
+  thursday:  '12am 6am',
   friday:    '12am-6am'
 }
 {% endhighlight %}
@@ -43,28 +43,27 @@ Once we have that, all we need to do is check if the current day and time we're 
 of their <s>.NET memory leak clean ups</s> maintenance windows.  If it does use the `Resque.enqueue_at` method:
 
 {% highlight ruby linenos %}
-if workers_time_off = time_off[current_day.to_sym]
+if workers_time_off = legacy_time_off[:"current_day"]
+  # If someone just enters a string convert it to an array
+  workers_time_off = [workers_time_off] if workers_time_off.kind_of?(String)
 
-  workers_time_off = workers_time_off.split('-').collect { |t|
-    Chronic.parse((t['am'] ? 'tomorrow ' : '') + t)
-  }
+  workers_time_off.each do |time_off|
+    time_off = time_off.split('-').collect { |t| Chronic.parse(t) }
 
-  from = workers_time_off.first
-  to   = workers_time_off.last
+    from = time_off.first
+    to   = time_off.last
 
-  if current_time >= from and current_time < to
-    # It falls within the given time off range for that day
-    Resque.enqueue_at(to, SomeWorker)
+    if current_time >= from and current_time < to
+      # It falls within the given time range for that day
+      break
+    end
   end
-
 end
 {% endhighlight %}
 
-You might have noticed on `line 4` I didn't use [Time](http://ruby-doc.org/core-1.9.3/Time.html) but
-[Chronic](https://github.com/mojombo/chronic) instead.  Well the great thing about ruby is,
-there's almost always a gem that will do what you need.  In this instance if the time contains `am` we
-need to make sure that the date is tomorow, otherwise it would set it for 6am the current day and not work
-as expected.
+You might have noticed on `line 5` I didn't use [Time](http://ruby-doc.org/core-1.9.3/Time.html) but
+[Chronic](https://github.com/mojombo/chronic) instead, this is because we want to be able to do things like `tomorrow at 12am`.  Well the great thing about ruby is,
+there's almost always a gem that will do what you need.
 
 That's it, now we have our [resque](https://github.com/defunkt/resque) workers stopping at certain days and times.
 If you have any questions, comments or improvements, please let me know by adding a comment :)
