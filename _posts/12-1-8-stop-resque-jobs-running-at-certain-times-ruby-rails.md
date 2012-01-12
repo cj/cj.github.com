@@ -62,7 +62,7 @@ if has_time_off = legacy_time_off[:"current_day"]
 end
 {% endhighlight %}
 
-You might have noticed on `line 5` I didn't use [Time](http://ruby-doc.org/core-1.9.3/Time.html) but
+You might have noticed on `line 7` I didn't use [Time](http://ruby-doc.org/core-1.9.3/Time.html) but
 [Chronic](https://github.com/mojombo/chronic) instead, this is because we want to be able to do things like `tomorrow at 12am`.  Well the great thing about ruby is,
 there's almost always a gem that will do what you need.
 
