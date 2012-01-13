@@ -43,7 +43,7 @@ Once we have that, all we need to do is check if the current day and time we're 
 of their <s>.NET memory leak clean ups</s> maintenance windows.  If it does use the `Resque.enqueue_at` method:
 
 {% highlight ruby linenos %}
-if has_time_off = legacy_time_off[:"current_day"]
+if has_time_off = legacy_time_off[current_day.to_sym]
   # If someone just enters a string convert it to an array
   has_time_off = [has_time_off] if has_time_off.kind_of?(String)
   # Loop through the times off
